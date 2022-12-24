@@ -11,6 +11,12 @@
 		308FCEED29576C10004A83C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FCEEC29576C10004A83C1 /* ContentView.swift */; };
 		308FCEEF29576C12004A83C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308FCEEE29576C12004A83C1 /* Assets.xcassets */; };
 		308FCEF229576C12004A83C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308FCEF129576C12004A83C1 /* Preview Assets.xcassets */; };
+		308FCEFD29576CBE004A83C1 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FCEFC29576CBE004A83C1 /* ContactsView.swift */; };
+		308FCEFF29576CCE004A83C1 /* ContactsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FCEFE29576CCE004A83C1 /* ContactsSectionView.swift */; };
+		308FCF0129576DF1004A83C1 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FCF0029576DF1004A83C1 /* ContactRowView.swift */; };
+		308FCF05295772F8004A83C1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FCF04295772F8004A83C1 /* Person.swift */; };
+		308FCF0729577304004A83C1 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FCF0629577304004A83C1 /* DataStore.swift */; };
+		308FCF0C295774F0004A83C1 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FCF0B295774F0004A83C1 /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		308FCEEC29576C10004A83C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		308FCEEE29576C12004A83C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		308FCEF129576C12004A83C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		308FCEFC29576CBE004A83C1 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		308FCEFE29576CCE004A83C1 /* ContactsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsSectionView.swift; sourceTree = "<group>"; };
+		308FCF0029576DF1004A83C1 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
+		308FCF04295772F8004A83C1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		308FCF0629577304004A83C1 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		308FCF0B295774F0004A83C1 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,14 @@
 		308FCEE929576C10004A83C1 /* ContactList SUI */ = {
 			isa = PBXGroup;
 			children = (
+				308FCF0629577304004A83C1 /* DataStore.swift */,
+				308FCF04295772F8004A83C1 /* Person.swift */,
 				308FCEEA29576C10004A83C1 /* ContactList_SUIApp.swift */,
 				308FCEEC29576C10004A83C1 /* ContentView.swift */,
+				308FCEFC29576CBE004A83C1 /* ContactsView.swift */,
+				308FCF0B295774F0004A83C1 /* DetailsView.swift */,
+				308FCEFE29576CCE004A83C1 /* ContactsSectionView.swift */,
+				308FCF0029576DF1004A83C1 /* ContactRowView.swift */,
 				308FCEEE29576C12004A83C1 /* Assets.xcassets */,
 				308FCEF029576C12004A83C1 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308FCF0729577304004A83C1 /* DataStore.swift in Sources */,
+				308FCF05295772F8004A83C1 /* Person.swift in Sources */,
+				308FCEFD29576CBE004A83C1 /* ContactsView.swift in Sources */,
 				308FCEED29576C10004A83C1 /* ContentView.swift in Sources */,
 				308FCEEB29576C10004A83C1 /* ContactList_SUIApp.swift in Sources */,
+				308FCF0C295774F0004A83C1 /* DetailsView.swift in Sources */,
+				308FCEFF29576CCE004A83C1 /* ContactsSectionView.swift in Sources */,
+				308FCF0129576DF1004A83C1 /* ContactRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
