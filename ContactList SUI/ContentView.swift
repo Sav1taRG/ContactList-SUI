@@ -25,7 +25,6 @@ struct ContentView: View {
                     }
             }
             .navigationTitle("Contacts List")
-            .navigationBarTitleDisplayMode(.large)
         }
     }
 }

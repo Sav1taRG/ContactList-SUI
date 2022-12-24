@@ -63,8 +63,8 @@
 		308FCEE929576C10004A83C1 /* ContactList SUI */ = {
 			isa = PBXGroup;
 			children = (
-				308FCF0629577304004A83C1 /* DataStore.swift */,
-				308FCF04295772F8004A83C1 /* Person.swift */,
+				308FCF0E295785AA004A83C1 /* Services */,
+				308FCF0D295785A0004A83C1 /* Models */,
 				308FCEEA29576C10004A83C1 /* ContactList_SUIApp.swift */,
 				308FCEEC29576C10004A83C1 /* ContentView.swift */,
 				308FCEFC29576CBE004A83C1 /* ContactsView.swift */,
@@ -83,6 +83,22 @@
 				308FCEF129576C12004A83C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		308FCF0D295785A0004A83C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				308FCF04295772F8004A83C1 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		308FCF0E295785AA004A83C1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				308FCF0629577304004A83C1 /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
