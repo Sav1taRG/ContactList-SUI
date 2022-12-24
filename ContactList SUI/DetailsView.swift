@@ -19,6 +19,7 @@ struct DetailsView: View {
             ContactRowView(contact: contact)
             Spacer()
         }
+        .padding()
         .navigationTitle(contact.fullName)
         .navigationBarTitleDisplayMode(.large)
     }
