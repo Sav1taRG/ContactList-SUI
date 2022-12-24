@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct DetailsView: View {
-    @Binding var isPresented: Bool
     let contact: Person
     
     var body: some View {
@@ -27,6 +26,6 @@ struct DetailsView: View {
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView(isPresented: .constant(true), contact: Person(id: 1, firstName: "Test", lastName: "Test", phoneNumber: "234124", email: "2@mal.cd"))
+        DetailsView(contact: Person(id: 1, firstName: "Test", lastName: "Test", phoneNumber: "234124", email: "2@mal.cd"))
     }
 }

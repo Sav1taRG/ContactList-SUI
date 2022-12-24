@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContactsView: View {
-    @State private var isPresented = false
+//    @State private var isPresented = false
     let contacts: [Person]
     
     var body: some View {
         List(contacts) { contact in
-            NavigationLink(destination: DetailsView(isPresented: $isPresented, contact: contact)) {
+            NavigationLink(destination: DetailsView(contact: contact)) {
                 Text("\(contact.fullName)")
             }
         }
