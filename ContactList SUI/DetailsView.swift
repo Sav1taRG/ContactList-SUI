@@ -13,14 +13,15 @@ struct DetailsView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "person")
+            Image(systemName: "person.fill")
                 .resizable()
                 .frame(width: 150, height: 150)
                 .padding()
             ContactRowView(contact: contact)
             Spacer()
         }
-        .padding()
+        .navigationTitle(contact.fullName)
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
