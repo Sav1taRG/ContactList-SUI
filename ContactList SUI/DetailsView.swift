@@ -23,12 +23,11 @@ struct DetailsView: View {
             Label(contact.email, systemImage: "envelope")
         }
         .navigationTitle(contact.fullName)
-        .navigationBarTitleDisplayMode(.large)
     }
 }
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView(contact: Person(id: 1, firstName: "Test", lastName: "Test", phoneNumber: "234124", email: "2@mal.cd"))
+        DetailsView(contact: Person.getPersons().first!)
     }
 }

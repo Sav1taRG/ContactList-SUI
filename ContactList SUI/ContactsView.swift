@@ -11,7 +11,7 @@ struct ContactsView: View {
     let contacts: [Person]
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(contacts) { contact in
                 NavigationLink(destination: DetailsView(contact: contact)) {
                     Text("\(contact.fullName)")

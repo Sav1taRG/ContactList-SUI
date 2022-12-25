@@ -11,14 +11,14 @@ struct ContactsSectionView: View {
     let contacts: [Person]
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(contacts) { contact in
                 Section(header: Text(contact.fullName)) {
                     Label(contact.phoneNumber, systemImage: "phone")
                     Label(contact.email, systemImage: "envelope")
                 }
             }
-            .navigationTitle("Contact List")
+            .navigationTitle("Contact list")
         }
     }
 }
