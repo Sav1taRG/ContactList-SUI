@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContactsView: View {
-//    @State private var isPresented = false
     let contacts: [Person]
     
     var body: some View {
-        List(contacts) { contact in
-            NavigationLink(destination: DetailsView(contact: contact)) {
-                Text("\(contact.fullName)")
+        NavigationView {
+            List(contacts) { contact in
+                NavigationLink(destination: DetailsView(contact: contact)) {
+                    Text("\(contact.fullName)")
+                }
             }
+            .navigationTitle("Contact List")
         }
     }
 }

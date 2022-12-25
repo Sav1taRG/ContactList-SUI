@@ -8,26 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var persons: [Person] = Person.getPersons()
+    private var persons = Person.getPersons()
     
     var body: some View {
-        NavigationView {
-            TabView {
-                ContactsView(contacts: persons)
-                    .tabItem {
-                        Image(systemName: "person.2")
-                        Text("Contacts")
-                    }
-                ContactsSectionView(contacts: persons)
-                    .tabItem {
-                        Image(systemName: "phone")
-                        Text("Numbers")
-                    }
-            }
-            .navigationTitle("Contacts List")
+        TabView {
+            ContactsView(contacts: persons)
+                .tabItem {
+                    Image(systemName: "person.2")
+                    Text("Contacts")
+                }
+            ContactsSectionView(contacts: persons)
+                .tabItem {
+                    Image(systemName: "phone")
+                    Text("Numbers")
+                }
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

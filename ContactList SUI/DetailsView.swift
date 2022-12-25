@@ -11,15 +11,17 @@ struct DetailsView: View {
     let contact: Person
     
     var body: some View {
-        VStack {
-            Image(systemName: "person.fill")
-                .resizable()
-                .frame(width: 150, height: 150)
-                .padding()
-            ContactRowView(contact: contact)
-            Spacer()
+        List {
+            HStack {
+                Spacer()
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                Spacer()
+            }
+            Label(contact.phoneNumber, systemImage: "phone")
+            Label(contact.email, systemImage: "envelope")
         }
-        .padding()
         .navigationTitle(contact.fullName)
         .navigationBarTitleDisplayMode(.large)
     }
